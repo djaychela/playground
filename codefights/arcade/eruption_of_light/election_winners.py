@@ -4,7 +4,7 @@ def electionsWinners(votes, k):
     for vote in votes:
         if vote + k > win:
             winners += 1
-    return max(1, winners)
+    return winners
 
 
 print(electionsWinners([2, 3, 5, 2], 3))
