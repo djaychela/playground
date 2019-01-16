@@ -3,7 +3,7 @@ def noteFrequency(note):
               'F': -4, 'F#': -3, 'Gb': -3, 'G': -2, 'G#': -1, 'Ab': -1}
     octave = int(note[-1])
     note = note[:-1]
-    pitch = (55 * 2 ** (octave - 1)) * 2 ** (lookup[note]/12)
+    pitch = (55 * 2 ** (octave - 1)) * 2 ** (lookup[note] / 12)
     return pitch
 
 

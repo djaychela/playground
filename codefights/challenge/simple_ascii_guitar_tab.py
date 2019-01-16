@@ -38,3 +38,16 @@ notes = "A2"
 #  "E |---|"]
 
 print(simpleASCIIGuitarTab(notes))
+
+
+# Winning version:
+
+# s,*g = eval(dir()[0])
+# for c in "eBGDAE":
+#     c += " |"
+#     for n, *a, o in s.split():
+#         x = ord(n)*13//8%12 + 12*int(o) + len(a) - 53
+#         x += x > -7
+#         c += "-%s" % (len(g)+x//5 and '-' or x%5)
+#     g += c + "-|",
+# return g
